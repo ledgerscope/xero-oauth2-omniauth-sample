@@ -63,5 +63,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # required gems for xero-ruby-oauth2 demo app
 # gem 'omniauth-xero-oauth2', :path => '../xero-oauth2-omniauth-strategy' # as a local gem
-gem 'omniauth-xero-oauth2', '~> 1.0.2'
+source "https://rubygems.pkg.github.com/ledgerscope" do
+  gem 'omniauth-xero-oauth2', '~> 1.1.16'
+end
+
 gem 'faraday' #for making http calls
