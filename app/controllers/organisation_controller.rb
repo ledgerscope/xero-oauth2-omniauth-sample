@@ -6,7 +6,7 @@ class OrganisationController < ApplicationController
 
     @tokenExpiresAt = Time.at(user.xeroTokenExpiresAt.to_i).to_datetime
 
-    resp = xero_api_get('https://api.xero.com/api.xro/2.0/Organisation', user)
+    resp = xero_api_get('https://xero.api.ledgerscope.com/api.xro/2.0/Organisation', user)
     
     @org_info = JSON.parse(resp.body)
 
